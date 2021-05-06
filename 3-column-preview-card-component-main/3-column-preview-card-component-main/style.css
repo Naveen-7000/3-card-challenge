@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.5);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+.attribution {
+    font-size: 11px;
+   
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.container{
+    background: linear-gradient(35deg, hsla(31, 77%, 52%, 0.5),rgba(0, 213, 228, 0.5));
+    height: 100vh;
+    font-size: 15px;
+    font-family: "Lexend Deca",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container .sedan{
+   
+    
+    width: 250px;
+    height: 400px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    background-color: var(--Bright-orange);
+    border-radius:10px 0 0 10px;
+}
+.container .suv{
+    
+    width: 250px;
+    height: 400px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    background-color: var(--Dark-cyan);
+}
+.container .luxury{
+    
+    width: 250px;
+    height: 400px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    background-color: var(--Very-dark-cyan);
+    border-radius:0 10px 10px 0;
+}
+h2{
+
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Big Shoulders Display";
+    /* line-height: 1.5; */
+    letter-spacing: 1px;
+}
+p{
+    
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 400;
+    padding:0 25% 20% 15%;
+   color: var(--Transparent-white);
+}
+.btn{
+    width: 100px;
+    padding: 8px;
+    margin-left: 15%;
+
+    border: var(--Very-light-gray) ;
+    border-radius: 20px;
+    text-align: center;
+
+}
+img{
+    width: 50px;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.container .sedan .btn{
+    
+    color:  hsl(31, 77%, 52%,0.7);
+}
+.container .suv .btn{
+    color: hsl(184, 100%, 22%,0.7);
+}
+.container .luxury .btn{
+    color:  hsl(179, 100%, 13%,0.7);
+}
+.container .sedan .btn:active{
+    cursor: pointer;
+    background-color: transparent;
+    border: solid white;
+    color:white;
+}
+.container .suv .btn:active{
+    cursor: pointer;
+    background-color: transparent;
+    border: solid white;
+    color:white;
+}
+.container .luxury .btn:active{
+    cursor: pointer;
+    background-color: transparent;
+    border: solid white;
+    color:white;
+}
+.container .sedan:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.795);
+    border-radius: 15px;
+}
+.container .suv:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.795);
+    border-radius: 15px;
+}
+.container .luxury:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.795);
+    border-radius: 15px;
+}
